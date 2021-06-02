@@ -1,8 +1,7 @@
 <?php
+namespace ChargeBee\ChargeBee;
 
-final class ChargeBee_Version
+final class Version
 {
 	  const VERSION = '2.8.2';
 }
-
-?>

@@ -1,9 +1,17 @@
 <?php
+namespace ChargeBee\ChargeBee\Models;
 
-class ChargeBee_InvoiceDunningAttempt extends ChargeBee_Model
+use ChargeBee\ChargeBee\Model;
+
+class InvoiceDunningAttempt extends Model
 {
-  protected $allowed = array('attempt', 'transaction_id', 'dunning_type', 'created_at', 'txn_status', 'txn_amount');
+  protected $allowed = array(
+      'attempt',
+      'transaction_id',
+      'dunning_type',
+      'created_at',
+      'txn_status',
+      'txn_amount'
+  );
 
 }
-
-?>

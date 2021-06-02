@@ -1,16 +1,26 @@
 <?php
+namespace ChargeBee\ChargeBee\Models;
 
-class ChargeBee_ContractTerm extends ChargeBee_Model
+use ChargeBee\ChargeBee\Model;
+
+class ContractTerm extends Model
 {
 
-  protected $allowed = array('id', 'status', 'contractStart', 'contractEnd', 'billingCycle', 'actionAtTermEnd',
-'totalContractValue', 'cancellationCutoffPeriod', 'createdAt', 'subscriptionId', 'remainingBillingCycles');
-
-
+  protected $allowed = [
+      'id',
+      'status',
+      'contractStart',
+      'contractEnd',
+      'billingCycle',
+      'actionAtTermEnd',
+      'totalContractValue',
+      'cancellationCutoffPeriod',
+      'createdAt',
+      'subscriptionId',
+      'remainingBillingCycles'
+  ];
 
   # OPERATIONS
   #-----------
 
- }
-
-?>
+}

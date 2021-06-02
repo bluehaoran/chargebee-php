@@ -1,9 +1,14 @@
 <?php
+namespace ChargeBee\ChargeBee\Models;
 
-class ChargeBee_CustomerRelationship extends ChargeBee_Model
+use ChargeBee\ChargeBee\Model;
+
+class CustomerRelationship extends Model
 {
-  protected $allowed = array('parent_id', 'payment_owner_id', 'invoice_owner_id');
+  protected $allowed = [
+      'parent_id',
+      'payment_owner_id',
+      'invoice_owner_id'
+  ];
 
 }
-
-?>
