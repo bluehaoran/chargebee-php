@@ -1,6 +1,9 @@
 <?php
+namespace ChargeBee\ChargeBee\Models;
 
-class ChargeBee_AdvanceInvoiceSchedule extends ChargeBee_Model
+use ChargeBee\ChargeBee\Model;
+
+class AdvanceInvoiceSchedule extends Model
 {
 
   protected $allowed = array('id', 'scheduleType', 'fixedIntervalSchedule', 'specificDatesSchedule'
@@ -12,5 +15,3 @@ class ChargeBee_AdvanceInvoiceSchedule extends ChargeBee_Model
   #-----------
 
  }
-
-?>
