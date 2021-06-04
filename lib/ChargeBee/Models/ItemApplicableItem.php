@@ -1,9 +1,11 @@
 <?php
 
-class ChargeBee_ItemApplicableItem extends ChargeBee_Model
+namespace ChargeBee\ChargeBee\Models;
+
+use ChargeBee\ChargeBee\Model;
+
+class ItemApplicableItem extends Model
 {
   protected $allowed = array('id');
 
 }
-
-?>

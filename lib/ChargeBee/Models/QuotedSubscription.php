@@ -1,6 +1,9 @@
 <?php
+namespace ChargeBee\ChargeBee\Models;
 
-class ChargeBee_QuotedSubscription extends ChargeBee_Model
+use ChargeBee\ChargeBee\Model;
+
+class QuotedSubscription extends Model
 {
 
   protected $allowed = array('id', 'planId', 'planQuantity', 'planUnitPrice', 'setupFee', 'billingPeriod',
@@ -12,5 +15,3 @@ class ChargeBee_QuotedSubscription extends ChargeBee_Model
   #-----------
 
  }
-
-?>

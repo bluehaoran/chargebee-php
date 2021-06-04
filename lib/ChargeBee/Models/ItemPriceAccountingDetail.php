@@ -6,12 +6,10 @@ use ChargeBee\ChargeBee\Util;
 
 class ItemPriceAccountingDetail extends Model
 {
-  	protected $allowed = [
+	protected $allowed = [
 		'sku',
 		'accounting_code',
 		'accounting_category1',
 		'accounting_category2'
-  	];
+	];
 }
-
-?>
