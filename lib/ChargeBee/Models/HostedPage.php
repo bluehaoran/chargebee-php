@@ -46,6 +46,11 @@ class HostedPage extends Model
         return Request::send(Request::POST, Util::encodeURIPath("hosted_pages", "checkout_existing"), $params, $env, $headers);
     }
 
+	public static function checkoutExistingForItems($params, $env = null, $headers = [])
+    {
+        return Request::send(Request::POST, Util::encodeURIPath("hosted_pages", "checkout_existing_for_items"), $params, $env, $headers);
+    }
+
     public static function updateCard($params, $env = null, $headers = [])
     {
         return Request::send(Request::POST, Util::encodeURIPath("hosted_pages", "update_card"), $params, $env, $headers);
