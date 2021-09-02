@@ -70,7 +70,7 @@ class Subscription extends Model
         return Request::send(Request::POST, Util::encodeURIPath("subscriptions"), $params, $env, $headers);
     }
 
-	public static function createWithItems($params, $env = null, $headers = [])
+	public static function createWithItems($id, $params, $env = null, $headers = [])
     {
         return Request::send(Request::POST, Util::encodeURIPath("customers", $id, "subscription_for_items"), $params, $env, $headers);
     }
