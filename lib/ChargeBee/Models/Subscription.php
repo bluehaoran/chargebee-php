@@ -135,6 +135,11 @@ class Subscription extends Model
         return Request::send(Request::POST, Util::encodeURIPath("subscriptions", $id, "cancel"), $params, $env, $headers);
     }
 
+	public static function cancelForItems($id, $params = [], $env = null, $headers = [])
+    {
+        return Request::send(Request::POST, Util::encodeURIPath("subscriptions", $id, "cancel_for_items"), $params, $env, $headers);
+    }
+
     public static function reactivate($id, $params = [], $env = null, $headers = [])
     {
         return Request::send(Request::POST, Util::encodeURIPath("subscriptions", $id, "reactivate"), $params, $env, $headers);
