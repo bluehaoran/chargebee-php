@@ -46,9 +46,15 @@ class Quote extends Model
     {
         return Request::send(Request::POST, Util::encodeURIPath("customers", $id, "create_subscription_quote"), $params, $env, $headers);
     }
+
     public static function updateSubscriptionQuote($params, $env = null, $headers = [])
     {
         return Request::send(Request::POST, Util::encodeURIPath("quotes", "update_subscription_quote"), $params, $env, $headers);
+    }
+
+	public static function updateSubscriptionQuoteForItems($params, $env = null, $headers = [])
+    {
+        return Request::send(Request::POST, Util::encodeURIPath("quotes", "update_subscription_quote_for_items"), $params, $env, $headers);
     }
 
     public static function createForOnetimeCharges($params, $env = null, $headers = [])
