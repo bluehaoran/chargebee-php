@@ -81,4 +81,9 @@ class Quote extends Model
     {
         return Request::send(Request::POST, Util::encodeURIPath("quotes", $id, "pdf"), $params, $env, $headers);
     }
+
+	public static function all($params = [], $env = null, $headers = [])
+    {
+        return Request::sendListRequest(Request::GET, Util::encodeURIPath("quotes"), $params, $env, $headers);
+    }
 }
