@@ -5,13 +5,11 @@ use ChargeBee\ChargeBee\Model;
 
 class AdvanceInvoiceSchedule extends Model
 {
-
-  protected $allowed = array('id', 'scheduleType', 'fixedIntervalSchedule', 'specificDatesSchedule'
-);
-
-
-
-  # OPERATIONS
-  #-----------
-
+  protected $allowed = [
+		'id',
+		'scheduleType',
+		'fixedIntervalSchedule',
+		'specificDatesSchedule'
+	];
+	
  }

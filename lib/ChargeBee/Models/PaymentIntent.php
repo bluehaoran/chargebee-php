@@ -8,26 +8,22 @@ use ChargeBee\ChargeBee\Util;
 
 class PaymentIntent extends Model
 {
-
-  protected $allowed = array(
-      'id',
-      'status',
-      'currencyCode',
-      'amount',
-      'gatewayAccountId',
-      'expiresAt',
-      'referenceId',
-      'paymentMethodType',
-      'createdAt',
-      'modifiedAt',
-      'customerId',
-      'gateway',
-      'activePaymentAttempt'
-  );
+  protected $allowed = [
+		'id',
+		'status',
+		'currencyCode',
+		'amount',
+		'gatewayAccountId',
+		'expiresAt',
+		'referenceId',
+		'paymentMethodType',
+		'createdAt',
+		'modifiedAt',
+		'customerId',
+		'gateway',
+		'activePaymentAttempt'
+	];
   
-  # OPERATIONS
-  #-----------
-
   public static function create($params, $env = null, $headers = array())
   {
     return Request::send(Request::POST, Util::encodeURIPath("payment_intents"), $params, $env, $headers);
@@ -42,5 +38,4 @@ class PaymentIntent extends Model
   {
     return Request::send(Request::GET, Util::encodeURIPath("payment_intents",$id), array(), $env, $headers);
   }
-
 }

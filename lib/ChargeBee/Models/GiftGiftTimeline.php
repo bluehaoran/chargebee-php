@@ -6,8 +6,8 @@ use ChargeBee\ChargeBee\Model;
 
 class GiftGiftTimeline extends Model
 {
-    protected $allowed = [
-      'status',
-      'occurred_at',
-    ];
+	protected $allowed = [
+		'status',
+		'occurred_at',
+	];
 }

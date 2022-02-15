@@ -6,7 +6,7 @@ use ChargeBee\ChargeBee\Model;
 
 class PlanApplicableAddon extends Model
 {
-    protected $allowed = [
-      'id',
-    ];
+	protected $allowed = [
+		'id',
+	];
 }

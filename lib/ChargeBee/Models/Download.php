@@ -6,11 +6,8 @@ use ChargeBee\ChargeBee\Model;
 
 class Download extends Model
 {
-    protected $allowed = [
-      'downloadUrl',
-      'validTill',
-    ];
-
-    # OPERATIONS
-    #-----------
+	protected $allowed = [
+		'downloadUrl',
+		'validTill',
+	];
 }

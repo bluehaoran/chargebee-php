@@ -6,6 +6,7 @@ use ChargeBee\ChargeBee\Model;
 
 class ItemApplicableItem extends Model
 {
-  protected $allowed = array('id');
-
+  protected $allowed = [
+		'id'
+	];
 }

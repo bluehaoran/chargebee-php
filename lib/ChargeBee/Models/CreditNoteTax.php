@@ -6,9 +6,9 @@ use ChargeBee\ChargeBee\Model;
 
 class CreditNoteTax extends Model
 {
-    protected $allowed = [
-      'name',
-      'amount',
-      'description',
-    ];
+	protected $allowed = [
+		'name',
+		'amount',
+		'description',
+	];
 }

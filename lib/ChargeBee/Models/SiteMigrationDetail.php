@@ -8,20 +8,17 @@ use ChargeBee\ChargeBee\Util;
 
 class SiteMigrationDetail extends Model
 {
-    protected $allowed = [
-      'entityId',
-      'otherSiteName',
-      'entityIdAtOtherSite',
-      'migratedAt',
-      'entityType',
-      'status'
-    ];
+	protected $allowed = [
+		'entityId',
+		'otherSiteName',
+		'entityIdAtOtherSite',
+		'migratedAt',
+		'entityType',
+		'status'
+	];
 
-    # OPERATIONS
-    #-----------
-
-    public static function all($params = [], $env = null, $headers = [])
-    {
-        return Request::sendListRequest(Request::GET, Util::encodeURIPath("site_migration_details"), $params, $env, $headers);
-    }
+	public static function all($params = [], $env = null, $headers = [])
+	{
+		return Request::sendListRequest(Request::GET, Util::encodeURIPath("site_migration_details"), $params, $env, $headers);
+	}
 }

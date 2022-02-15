@@ -6,10 +6,10 @@ use ChargeBee\ChargeBee\Model;
 
 class PlanEventBasedAddon extends Model
 {
-    protected $allowed = [
-      'id',
-      'quantity',
-      'on_event',
-      'charge_once',
-    ];
+	protected $allowed = [
+		'id',
+		'quantity',
+		'on_event',
+		'charge_once',
+	];
 }

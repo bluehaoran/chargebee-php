@@ -6,9 +6,9 @@ use ChargeBee\ChargeBee\Model;
 
 class InvoiceNote extends Model
 {
-    protected $allowed = [
-      'entity_type',
-      'note',
-      'entity_id',
-    ];
+	protected $allowed = [
+		'entity_type',
+		'note',
+		'entity_id',
+	];
 }

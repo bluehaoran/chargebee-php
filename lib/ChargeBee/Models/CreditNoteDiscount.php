@@ -6,10 +6,10 @@ use ChargeBee\ChargeBee\Model;
 
 class CreditNoteDiscount extends Model
 {
-    protected $allowed = [
-      'amount',
-      'description',
-      'entity_type',
-      'entity_id',
-    ];
+	protected $allowed = [
+		'amount',
+		'description',
+		'entity_type',
+		'entity_id',
+	];
 }

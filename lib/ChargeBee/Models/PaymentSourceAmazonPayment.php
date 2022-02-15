@@ -6,8 +6,8 @@ use ChargeBee\ChargeBee\Model;
 
 class PaymentSourceAmazonPayment extends Model
 {
-    protected $allowed = [
-      'email',
-      'agreement_id',
-    ];
+	protected $allowed = [
+		'email',
+		'agreement_id',
+	];
 }

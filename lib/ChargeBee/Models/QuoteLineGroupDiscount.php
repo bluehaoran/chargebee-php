@@ -6,11 +6,10 @@ use ChargeBee\ChargeBee\Model;
 
 class QuoteLineGroupDiscount extends Model
 {
-  protected $allowed = array(
-      'amount',
-      'description',
-      'entity_type',
-      'entity_id'
-  );
-
+  protected $allowed = [
+		'amount',
+		'description',
+		'entity_type',
+		'entity_id'
+	];
 }

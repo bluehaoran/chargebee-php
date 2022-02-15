@@ -6,13 +6,10 @@ use ChargeBee\ChargeBee\Model;
 
 class ThirdPartyPaymentMethod extends Model
 {
-    protected $allowed = [
-      'type',
-      'gateway',
-      'gatewayAccountId',
-      'referenceId',
-    ];
-
-    # OPERATIONS
-    #-----------
+	protected $allowed = [
+		'type',
+		'gateway',
+		'gatewayAccountId',
+		'referenceId',
+	];
 }

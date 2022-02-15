@@ -6,10 +6,9 @@ use ChargeBee\ChargeBee\Model;
 
 class QuoteLineGroupTax extends Model
 {
-  protected $allowed = array(
-      'name',
-      'amount',
-      'description'
-  );
-
+  protected $allowed = [
+		'name',
+		'amount',
+		'description'
+	];
 }

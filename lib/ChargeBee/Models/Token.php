@@ -6,20 +6,16 @@ use ChargeBee\ChargeBee\Model;
 
 class Token extends Model
 {
-
-  protected $allowed = array(
-      'id',
-      'gateway',
-      'gatewayAccountId',
-      'paymentMethodType',
-      'status',
-      'idAtVault',
-      'vault',
-      'ipAddress',
-      'createdAt',
-      'expiredAt'
-  );
-
-  # OPERATIONS
-  #-----------
+  protected $allowed = [
+		'id',
+		'gateway',
+		'gatewayAccountId',
+		'paymentMethodType',
+		'status',
+		'idAtVault',
+		'vault',
+		'ipAddress',
+		'createdAt',
+		'expiredAt'
+	];
 }
